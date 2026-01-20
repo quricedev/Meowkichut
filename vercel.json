@@ -1,13 +1,14 @@
 {
   "functions": {
-    "api/bomber.py": {
-      "maxDuration": 30
+    "api/**/*.py": {
+      "maxDuration": 30,
+      "runtime": "python@3.11"
     }
   },
-  "rewrites": [
+  "routes": [
     {
-      "source": "/api/bomber",
-      "destination": "/api/bomber.py"
+      "src": "/api/(.+)",
+      "dest": "/api/$1.py"
     }
   ]
 }
