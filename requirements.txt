@@ -1,3 +1,1 @@
-aiohttp==3.9.0
-aiohttp-client-manager==0.1.2
-certifi==2024.2.2
+aiohttp==3.13.3
