@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "api/bomber.py": {
+      "maxDuration": 30
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/bomber",
+      "destination": "/api/bomber.py"
+    }
+  ]
+}
