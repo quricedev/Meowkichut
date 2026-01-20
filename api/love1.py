@@ -16,7 +16,7 @@ KEYS_FILE = os.path.join(os.path.dirname(__file__), "..", "bombkeys.txt")
 
 MAX_REQUESTS = 100
 WINDOW_SECONDS = 180  
-DELAY = 0.5  
+DELAY = 0.2
 
 APIS = [
     {
