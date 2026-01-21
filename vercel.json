@@ -1,12 +1,10 @@
 {
   "functions": {
-    "api/**/*.py": {
-      "maxDuration": 30
-    }
+    "api/**/*.py": {}
   },
   "routes": [
     {
-      "src": "/api/(.+)",
+      "src": "^/api/(.*)$",
       "dest": "/api/$1.py"
     }
   ]
