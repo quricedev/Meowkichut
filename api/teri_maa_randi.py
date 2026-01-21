@@ -428,9 +428,6 @@ class handler(BaseHTTPRequestHandler):
                 "failed_calls": failed,
                 "owner": "@UseSir / @OverShade"
             }
-
-self.wfile.write(json.dumps(response, indent=2).encode())
-            
             self.wfile.write(json.dumps(response, indent=2).encode())
             
         except Exception as e:
