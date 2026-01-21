@@ -1,11 +1,13 @@
 {
   "functions": {
-    "api/**/*.py": {}
+    "api/bomber.py": {
+      "maxDuration": 30
+    }
   },
-  "routes": [
+  "rewrites": [
     {
-      "src": "^/api/(.*)$",
-      "dest": "/api/$1.py"
+      "source": "/api/bomber",
+      "destination": "/api/bomber.py"
     }
   ]
 }
